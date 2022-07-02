@@ -1,0 +1,618 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
+body {
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+  margin: 0;
+  font-size: 16px;
+  font-weight: normal;
+  color: #000;
+  background-color: #f3f3f3;
+}
+a {
+  text-decoration: none;
+}
+nav {
+  display: flex;
+}
+div > h1 {
+  font-weight: bold;
+}
+.container {
+  max-width: 100rem !important;
+}
+
+.page-about-header {
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 49rem;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-image: url("https://ableton-production.imgix.net/about/header.jpg?auto=format&fit=crop&fm=jpg&h=817&ixjsv=1.1.3");
+}
+.main-nav-link-list-primary,
+.main-nav-link-list-secondary,
+.main-nav-link-list-tertiary {
+  font-size: 1.25rem;
+  line-height: 1.5;
+  width: 100%;
+  padding-right: 1.25rem;
+  font-weight: bold;
+}
+.page-about-text {
+  padding-top: 10rem;
+  margin: auto;
+  width: 50rem;
+  height: 40rem;
+  text-align: left;
+  font-weight: 900;
+  align-content: center;
+}
+.main-nav-link-list-secondary {
+  display: flex;
+  align-content: center;
+  justify-content: end;
+  flex: 1 1 100%;
+}
+.main {
+  background-color: #fff;
+}
+.main-nav-logo-image {
+  width: 3.75em;
+  height: 1.75em;
+}
+.main-nav-logo {
+  padding-left: 2rem;
+}
+.main-nav {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+.main-nav-primary-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+.nav-aria-primary {
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+#nav-aria-secondary {
+  width: 100%;
+  background-color: white;
+  opacity: 85%;
+  z-index: 10000;
+  transition: 0.6s;
+  position: sticky;
+  display: block;
+  top: 0;
+}
+
+
+.main-nav-separator {
+  display: block;
+  height: 0;
+  border-top: 2px solid #eee;
+}
+.live{
+  color: #0000ff !important;
+}
+.nav-more,
+.nav-about {
+  color: #ff764d !important;
+}
+.main-nav-link-list-primary,
+.main-nav-link-list-secondary {
+  margin-bottom: 0rem;
+}
+.main-nav a {
+  color: inherit;
+  text-decoration: none;
+}
+.main-nav-link-list-primary {
+  display: flex;
+  align-content: center;
+}
+.main-nav-link-list-tertiary {
+  display: flex;
+  align-content: start;
+}
+.img-pad {
+  padding: 0 8rem;
+}
+.body-text {
+  margin: 0 auto;
+}
+.body-text a {
+  text-decoration: none;
+}
+.p-info {
+  padding-top: 2rem;
+}
+.page-about-collage {
+  height: 55rem;
+  position: relative;
+}
+.page-about-background {
+  position: absolute;
+  z-index: 0;
+  background-color: #fbffa7;
+  width: 61.5rem;
+  height: 55rem;
+  left: 37rem;
+}
+.page-about-collage-media2 {
+  display: block;
+  position: relative;
+  top: 50%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 36rem;
+  height: 27rem;
+  z-index: 1;
+  background-image: url("https://ableton-production.imgix.net/about/photo-2.jpg?fit=crop&h=317&ixjsv=1.1.3&w=423");
+}
+.page-about-collage-media1 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 40rem;
+  height: 40rem;
+  margin-left: 6rem;
+  background-image: url("https://ableton-production.imgix.net/about/photo-1.jpg?fit=crop&h=528&ixjsv=1.1.3&w=528");
+}
+.page-about-media {
+  position: relative;
+  height: 40rem;
+  margin: 0 25rem 0 25rem;
+}
+.youtube-video {
+  position: relative;
+  width: 100%;
+  height: 30rem;
+  cursor: pointer;
+}
+.youtube-video-poster {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 30rem;
+  object-fit: cover;
+  cursor: pointer;
+}
+.youtube-video:after {
+  display: block;
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHdpZHRoPSI1MHB4IiBoZWlnaHQ9IjUwcHgiIHZpZXdCb3g9IjAgMCA1MCA1MCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgNTAgNTAiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxnPjxjaXJjbGUgZmlsbD0iIzAwMzNGRiIgY3g9IjI1IiBjeT0iMjUiIHI9IjI1Ii8+PHBvbHlnb24gZmlsbD0iI0ZGRkZGRiIgcG9pbnRzPSIzNSwyNSAyNywyOS41IDE5LDM0IDE5LDI1IDE5LDE2IDI3LDIwLjUgIi8+PC9nPjwvc3ZnPg==);
+}
+.youtube-video:after {
+  transform: translateY(-50%) translateX(-50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 75px;
+  height: 75px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 75px 75px;
+  pointer-events: none;
+  cursor: pointer;
+  content: "";
+}
+.p-about-media {
+  padding-top: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.page-about-text-video {
+  padding-top: 10rem;
+  margin: auto;
+  width: 50rem;
+  height: 35rem;
+  text-align: left;
+  font-weight: 900;
+  align-content: center;
+}
+.responsiveRapper iframe {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.page-about__header-ableton-logo {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.page-about-text-under-video {
+  margin: auto;
+  width: 50rem;
+  height: 25rem;
+  text-align: left;
+  font-weight: 900;
+  align-content: center;
+}
+.page-about-text-under-people {
+  margin: auto;
+  margin-bottom: 3rem;
+  width: 50rem;
+  height: 25rem;
+  text-align: left;
+  font-weight: 900;
+  align-content: center;
+}
+
+.page-about-collage-people {
+  height: 85rem;
+  position: relative;
+}
+.page-about-background-people {
+  position: absolute;
+  z-index: 0;
+  background-color: #b6ffc0 !important;
+  width: 61.5rem;
+  height: 75rem;
+  right: 37rem;
+}
+.page-about-collage-people-media1 {
+  position: absolute;
+  top: 8rem;
+  bottom: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 35rem;
+  height: 26rem;
+  margin-left: 8rem;
+  background-image: url("https://ableton-production.imgix.net/about/photo-3.jpg?dpr=2&fit=crop&h=400&ixjsv=1.1.3&q=50&w=533");
+}
+.page-about-collage-people-media2 {
+  position: relative;
+  display: block;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 35rem;
+  height: 26rem;
+  top: 50%;
+  transform: translate(23%, 19%);
+  background-position: 50% 50%;
+  background-image: url("https://ableton-production.imgix.net/about/photo-4.jpg?dpr=2&fit=crop&h=400&ixjsv=1.1.3&q=50&w=533");
+}
+.page-about-collage-people-media3 {
+  position: absolute;
+  display: block;
+  top: 44%;
+  left: 72%;
+  transform: translate(-50%, -50%);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 40rem;
+  height: 40rem;
+  z-index: 1;
+  background-image: url("https://ableton-production.imgix.net/about/photo-5.jpg?dpr=2&fit=crop&h=465&ixjsv=1.1.3");
+}
+img {
+  height: auto;
+  max-width: 100%;
+  border: 0;
+}
+.page-about-program-img {
+  margin: 0 8rem 8rem 8rem;
+}
+.page-about-background-presentation {
+  position: absolute;
+  z-index: 0;
+  background-color: #d5b3ff !important;
+  width: 61.5rem;
+  height: 65rem;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+.page-about-collage-presentation {
+  height: 72rem;
+  position: relative;
+}
+.page-about-collage-presentation-media1 {
+  position: relative;
+  display: block;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 35rem;
+  height: 26rem;
+  top: 50%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+  background-position: 50% 50%;
+  background-image: url("https://ableton-production.imgix.net/about/photo-6-a.jpg?fit=crop&h=279&ixjsv=1.1.3&w=372");
+}
+.page-about-collage-presentation-media2 {
+  position: relative;
+  display: block;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 40rem;
+  height: 40rem;
+  top: 10%;
+  margin-left: 60rem;
+  transform: translate(-50%, -50%);
+  background-position: 50% 50%;
+  background-image: url("https://ableton-production.imgix.net/about/photo-7.jpg?fit=crop&h=667&ixjsv=1.1.3&w=667");
+}
+.page-about-job-teaser {
+  position: relative;
+  margin-top: 8rem;
+  width: 100%;
+  height: 48rem;
+}
+.page-about-job-teaser-background {
+  position: relative;
+  z-index: 0;
+  background-color: #b1c5ff !important;
+  width: 40rem;
+  height: 40rem;
+  margin-left: 50rem;
+  display: flex;
+  justify-content: center;
+}
+.page-about-job-teaser-media {
+  width: 40rem;
+  height: 40rem;
+  position: absolute;
+  display: block;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("https://ableton-production.imgix.net/about/photo-8.jpg?crop=right&fit=crop&h=667&ixjsv=1.1.3");
+  background-position: 50% 50%;
+  margin-left: 10rem;
+}
+.text-wrapper-people {
+  display: table;
+  width: 25rem;
+  height: 100%;
+}
+.text-wrapper-people .body-text {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.text-wrapper-people h1 {
+  font-size: 2rem !important;
+}
+.has-arrow {
+  text-decoration: none;
+  font-weight: bolder !important;
+  color: blue;
+}
+.has-arrow:after {
+  content: "\00a0›";
+}
+footer {
+  display: block;
+}
+.main-footer {
+  height: 50rem;
+  max-width: 100rem;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+}
+.main-footer-separator {
+  position: relative;
+  background-color: #fff;
+}
+.main-footer-separator::after {
+  content: "";
+  display: block;
+  height: 0;
+  border-top: 2px solid #efefef;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+.main-footer-container{
+  width: 100%;
+  height: 100%;
+  padding: 0 7rem 0 7rem;
+
+}
+.main-footer-row-logo{
+  width: 100%;
+  height: 10rem;
+}
+.main-footer-logo{
+ float: left;
+ margin-left: 2rem;
+position: absolute;
+ width: 11rem;
+ height: 16rem;
+}
+.main-footer-h3 {
+  margin: 0;
+  font-size: 1.25em;
+  font-weight: bold;
+}
+.footer-text-div{
+  margin: 0;
+  margin-top: 1rem;
+  font-size: 1.25em;
+  font-weight:bold;
+}
+table{
+  float:left;
+  width:28.166rem;
+  height: 15rem;
+ }
+ .main-footer-row-table{
+  width: 100%;
+  height: 30rem;
+  margin-bottom: 3rem;
+}
+.main-footer-group{
+  display: flex;
+  flex-grow: 1;
+}
+.main-footer-button{
+  display: inline-block;
+  margin: 0;
+  padding: 0.35em 1.5em;
+  font-weight: bold;
+  font-size: inherit;
+  color: #fff!important;
+  background: blue;
+  border: 0;
+  border-radius: 0;
+  cursor: pointer;
+}
+.main-footer-input input[type="email"]{
+  font-size: inherit;
+  flex-grow: 1;
+  width: 100%;
+  margin: 0;
+  padding: 0.4em 0.75em;
+  background: transparent;
+  background-color: #eee;
+  border: 0;
+  user-select: none;
+  font-weight: normal;
+  border-radius: 0;
+}
+.main-footer-input{
+  flex: 1;
+}
+.main-footer-newsletter{
+  margin-top: 1rem;
+}
+li a {
+  color:black !important;
+}
+.main-footer-has-arrow-li{
+  font-weight: bold;
+font-size: 1.25;
+}
+.main-footer-has-arrow-li::after {
+  content: '\00a0›';
+}
+ul {
+  list-style: none;
+}
+.main-footer-h3{
+    margin: 0;
+    font-size: 1.25em;
+    font-weight: bold;
+}
+.main-footer-language-selector {
+  font-size: .875rem;
+  margin-top: 0.75em;
+  display: flex;
+}
+.main-footer-language{
+  display: inline-block;
+  width: auto;
+  max-width: none;
+}
+form {
+  display: block;
+  margin-top: 0em;
+}
+option {
+  font-weight: normal;
+  display: block;
+  white-space: nowrap;
+  min-height: 1.2em;
+  padding: 0px 2px 1px;
+}
+select, input {
+  border-radius: 0;
+}
+select{
+text-decoration: none;
+}
+.lang-has-arrow::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 100%;
+  background-color: transparent!important;
+  background: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+PHN2ZyB3aWR0aD0iOHB4IiBoZWlnaHQ9IjZweCIgdmlld0JveD0iMCAwIDggNiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4bWxuczpza2V0Y2g9Imh0dHA6Ly93d3cuYm9oZW1pYW5jb2RpbmcuY29tL3NrZXRjaC9ucyI+ICAgICAgICA8dGl0bGU+UGF0aCAxPC90aXRsZT4gICAgPGRlc2M+Q3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M+ICAgIDxkZWZzPjwvZGVmcz4gICAgPGcgaWQ9IlBhZ2UtMSIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCIgc2tldGNoOnR5cGU9Ik1TUGFnZSI+ICAgICAgICA8ZyBpZD0iQXJ0Ym9hcmQtMSIgc2tldGNoOnR5cGU9Ik1TQXJ0Ym9hcmRHcm91cCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMC4wMDAwMDAsIC0yLjAwMDAwMCkiIGZpbGw9IiMwMDAwMDAiPiAgICAgICAgICAgIDxwYXRoIGQ9Ik0tNS4wNjU2NDEwNmUtMDgsMiBMMy45OTk5OTk5Nyw3Ljk5OTk5OTk2IEw4LDIgTC01LjA2NTY0MTA2ZS0wOCwyIFoiIGlkPSJQYXRoLTEiIHNrZXRjaDp0eXBlPSJNU1NoYXBlR3JvdXAiPjwvcGF0aD4gICAgICAgIDwvZz4gICAgPC9nPjwvc3ZnPg==);
+  pointer-events: none;
+}
+.lang-has-arrow{
+  position: relative;
+}
+optgroup {
+  font-weight: bolder;
+  display: block;
+}
+.location-chooser  {
+  appearance: none;
+  display: inline-block;
+  font-weight: bold;
+  width: 100%;
+  margin: 0;
+  border: 0; 
+  background: transparent;
+  background-color: #eee;
+  user-select: none;
+  height: 1.875rem;
+  padding: 0.35em 50px 0.35em 0.75em;
+  cursor: pointer;
+}
+.language-chooser  {
+  appearance: none;
+  display: block;
+  background: transparent;
+  border: 0; 
+  font-weight: bold;
+  width: 7rem;
+  margin: 0;
+  padding: 0.4em 0.75em;
+  background: transparent;
+  background-color: #eee;
+  user-select: none;
+  height: 1.875rem;
+  padding: 0.35em 50px 0.35em 0.75em;
+  cursor: pointer;
+}
+.main-footer-secondary-link-list {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1em;
+  word-spacing: 1rem;
+}
+.main-footer-secondary-link-list-item{
+  color: black !important;
+  font-weight: bold;
+}
+.main-footer-row{
+width: 100%;
+height: 7rem;
+display: flex;
+}
+.main-footer-secondary-logo {
+  float: right;
+  width: auto;
+  margin-left: 3em;
+  justify-content: end;
+}
+.main-footer-signature-text{
+  font-weight: bold;
+}
+.main-footer-column3{
+  flex-grow: 1;
+}
